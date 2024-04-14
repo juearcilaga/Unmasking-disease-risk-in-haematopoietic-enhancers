@@ -1,0 +1,24 @@
+
+INPUTS
+gene_Anotations38_lcincluded.rds: RDS file containing the processed gene annotations from ENCODE release 38
+20160816.data: Metadata file from BLUEPRINT
+celltype_Abb.txt: File mapping cell type abbreviations to full names.
+METADATA_paper2.txt: Additional metadata file for paper-related information.
+celltype_data2.txt: Cell type ontologylabelsChr.txt
+ labelsChr.txt:Chromatin states labels and identifiers
+dfcountsEC.rds and dfcountsEC_transcripts.rds: RDS files containing the processed counts data.
+transcript_quant_BLUEPTINT.txt: Text file containing URLs for transcript quantification files.
+Metadata files for ChiPseq and RNAseq: Metadata_ChiPseq.txt, Metadata_RNAseq.txt
+
+OUTPUTS:
+ECAvg.rds: RDS file containing summary statistics of transcript expression.
+states_220422_BACKGROUND_raw.rds: Original chromatin  states matrix
+states_220422_BACKGROUND_merged.rds:Merged chromatin states  matrix
+Conserved enhancers dataframe:ConservedDF.rds
+Filtered GWAS Catalog dataset: gr_gwas_cat_reduc.rds
+RDS file containing identified active enhancers: BActiveE.rds
+Table_PatternsAE.txt: Table containing enhancer activity patterns.
+gr_AE_list.rds: GenomicRanges object of enhancer regions.
+AE_abundance_celltype.txt: Table containing enhancer abundance per cell type.
+SNPsToBkGdE.rds: Filtered dataset mapping SNPs to enhancers.
+Enhancer-in-GWAS enrichment results: GWAS_results_0001_V2.txt
